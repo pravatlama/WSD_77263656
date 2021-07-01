@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anemone - Shop Online</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="nav-content">
+          <div class="logo"><a href="index.html">Anemone</a></div>
+          <ul class="nav-menu">
+            <li class="icon cancel-btn">
+              <i class="fa fa-times"></i>
+            </li>
+            <li><a href="index.html" id="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="clothing.html">Clothing</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="clothing.html" class="cart-page"
+                ><i class="fa fa-shopping-bag" onclick="cart()"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      <!-- Banner -->
+      <img src="./Images/banner.png" alt="banner" class="banner" />
+      <div class="banner-content">
+        <h2><span class="offer">50%</span> off on first purchase</h2>
+        <h1>
+          <span>Happiness on</span>
+          <span>your finger tips</span>
+        </h1>
+        <a href="clothing.html" class="btn">Shop now</a>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Clothes -->
+      <section class="section featured">
+        <div class="title">
+          <h2>Clothings</h2>
+        </div>
+        <div class="product-center container">
+          <div class="product">
+            <div class="product-header">
+              <img src="./Images/clothes1.jpg" alt="" />
+            </div>
+            <div class="product-footer">
+              <a href="">
+                <h3>Purple Silk Shirt</h3>
+              </a>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <h4 class="price">Nrs. 2000</h4>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-header">
+              <img src="./Images/clothes2.jpg" alt="" />
+            </div>
+            <div class="product-footer">
+              <a href="">
+                <h3>Brown Leather Bag</h3>
+              </a>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <h4 class="price">Nrs. 2000</h4>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-header">
+              <img src="./Images/clothes3.jpg" alt="" />
+            </div>
+            <div class="product-footer">
+              <a href="">
+                <h3>Flower Print Skirt</h3>
+              </a>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <h4 class="price">Nrs. 2000</h4>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-header">
+              <img src="./Images/clothes5.jpg" alt="" />
+              <ul class="right-icons">
+                <li>
+                  <a href="clothing.html"><i class="fa fa-arrow-right"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="product-footer">
+              <a href="">
+                <h3>Turtle Neck Top</h3>
+              </a>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <h4 class="price">Nrs. 2000</h4>
+            </div>
+          </div>
+          <a href="clothing.html" class="see-all btn">See all</a>
+        </div>
+      </section>
+
+      <!-- Accessories -->
+      <section class="section featured">
+        <div class="title">
+          <h2>Accessories</h2>
+        </div>
+        <div class="product-center container">
+          <div class="product">
+            <div class="product-header">
+              <img src="./Images/accessories1.jpg" alt="" />
+            </div>
+            <div class="product-footer">
+              <a href="">
+                <h3>Pearl Sage Handbag</h3>
+              </a>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <h4 class="price">Nrs. 2000</h4>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-header">
+              <img src="./Images/accessories2.jpg" alt="" />
+            </div>
+            <div class="product-footer">
+              <a href="">
+                <h3>Mismatched set of pearl attached earrings</h3>
+              </a>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <h4 class="price">Nrs. 2000</h4>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-header">
+              <img src="./Images/accessories3.jpg" alt="" />
+            </div>
+            <div class="product-footer">
+              <a href="">
+                <h3>Square Gradient Lens</h3>
+              </a>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <h4 class="price">Nrs. 2000</h4>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-header">
+              <img src="./Images/accessories4.jpg" alt="" />
+              <ul class="right-icons">
+                <li>
+                  <a href="accessories.html"
+                    ><i class="fa fa-arrow-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="product-footer">
+              <a href="">
+                <h3>Three Layer Necklace</h3>
+              </a>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <h4 class="price">Nrs. 2000</h4>
+            </div>
+          </div>
+          <a href="accessories.html" class="see-all btn">See all</a>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section">
+        <div class="title">
+          <h2>Testimonials</h2>
+        </div>
+        <div class="testimonial-center container">
+          <div class="testimonial">
+            <span>&ldquo;</span>
+            <p>
+              Could online shopping be anymore easy? I will be dancing after
+              everytime I shop from anemone.
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <div class="img-cover">
+              <img src="./images/profile1.jpg" alt="" />
+            </div>
+            <h4>Chandler Bing</h4>
+          </div>
+          <div class="testimonial">
+            <span>&ldquo;</span>
+            <p>
+              Oh my eyes! my eyes!! my eyes!!! Well this is my face after I shop
+              from anemone. Shocked and happy together
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <div class="img-cover">
+              <img src="./images/profile2.jpg" alt="" />
+            </div>
+            <h4>Phoebe Buffay</h4>
+          </div>
+          <div class="testimonial">
+            <span>&ldquo;</span>
+            <p>
+              Woah clothes from anemone has me getting more clothes. And anyone
+              single there? How you doin'
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <div class="img-cover">
+              <img src="./images/profile3.jpg" alt="" />
+            </div>
+            <h4>Joey Tribbiani</h4>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="section footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-center">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="clothing.html">Clothing</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="contact.html">Contact</a>
+            <a href="clothing.html" onclick="cart()">Cart</a>
+          </div>
+          <div class="footer-center">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fa fa-facebook"></i>&nbsp;&nbsp;Facebook</a
+            >
+            <a href="https://www.instagram.com/anemone.np/" target="_blank"
+              ><i class="fa fa-instagram"></i>&nbsp;&nbsp;Instagram</a
+            >
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fa fa-twitter"></i>&nbsp;&nbsp;Twitter</a
+            >
+            <a href="https://www.youtube.com" target="_blank"
+              ><i class="fa fa-youtube"></i>&nbsp;&nbsp;Youtube</a
+            >
+          </div>
+          <div class="footer-center">
+            <h3>CONTACT US</h3>
+            <div>
+              <span>
+                <i class="fa fa-map-marker"></i>
+              </span>
+              New Baneswor, Ktm
+            </div>
+            <div>
+              <span>
+                <i class="fa fa-envelope"></i>
+              </span>
+              anemone@gmail.com
+            </div>
+            <div>
+              <span>
+                <i class="fa fa-phone"></i>
+              </span>
+              +977-9823456789
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./JS/main.js" async></script>
+  </body>
+</html>
